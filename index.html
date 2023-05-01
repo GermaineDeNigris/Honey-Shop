@@ -1,0 +1,79 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+<!-- fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Snippet&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Song+Myung&display=swap" rel="stylesheet">
+<!-- file links -->
+       <link rel="stylesheet" href="index.css">
+       <link rel="stylesheet" href="data.js">
+<!-- font awesome -->
+       <script src="https://kit.fontawesome.com/982df116d6.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+<!-- header -->
+        <div class="header">
+            <img class="header" src ="https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/bees-on-small-white-flowers-linda-brody.jpg" alt="bees pollenating some small white flowers">
+                <div class="box"></div>
+                <h1>MATERS & Co</h1>
+        </div>
+<!-- products -->
+        <div class="product-feed" id="product-feed">
+		</div>
+<!-- product order -->
+        <div class="hidden" id="payment-container">
+            <h2 id="order-title">Your Order</h2>
+                <div id="your-orders">
+                    </div>
+                    <hr class="thick-line">
+                    <div class="product-add">
+                        <h3>Total Price</h3>
+                        <h2 id="price-total">$</h2>
+                 </div>
+            <button class="complete-order-btn" id="complete-order-btn">Complete Order</button>
+        </div>
+ <!-- checkout -->       
+        <div class="checkout-requirement-card" id="checkout-requirement-card" style= "display:none">
+            <div class="payment-requirements" id="payment-requirements">
+                <form id="payment-form">
+                <h2 id="payment-card-header">Enter Card Details</h2>
+                <input 
+                id="name"
+                class="input"
+                required 
+                type="text" 
+                placeholder="Enter your name">
+                <input 
+                id"cc"
+                class="input" 
+                required 
+                type="cc-number" 
+                type="tel" 
+                inputmode="numeric" 
+                pattern="[0-9\s]{13,19}" 
+                autocomplete="cc-number" 
+                maxlength="19" 
+                placeholder="Enter your credit card">
+                <input 
+                id="cvv"
+                class="input" 
+                required 
+                type="credit-cvc" 
+                type="tel" 
+                maxlength="4" 
+                placeholder="Enter your CVV">
+            </div>
+             <button type="submit" class="pay-btn" id="pay-btn">Pay</button>
+             </form>
+        </div>
+ <!-- thank you message --> 
+        <div class="closing-block hidden" id="closing-block" style="display:none">
+            <h2 id="closing-message">Thank you! Your order is on the way.</h2>
+        </div>
+        <script src="index.js" type="module"></script>
+    </body>
+</html>
+
