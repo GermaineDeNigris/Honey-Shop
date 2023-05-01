@@ -79,7 +79,7 @@ function renderOrders() {
   for (let { name, amount, id, price } of ordersArray) {
     ordersHtml += `
             <div class="orders-container">
-                    <h2 id="order-name">${name}</h2>
+                    <h3 id="order-name">${name}</h3>
                     <h3 class="order-amount">x${amount}</h3>
                     <button class="remove-btn" data-remove=${id}>REMOVE</button>
                     <h2 class="order-price">$${price}</h2>
